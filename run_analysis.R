@@ -38,6 +38,6 @@ run.analysis <- function() {
     extractCols() %>%                         # Step 2: Extracts only the mean and standard deviation
     mutate(activity=loadActivityNames()) %>%  # Step 3: Add activity data
     mutate(subject=loadSubjects()) %>%        # Step 5.1: Add subject data
-    group_by(activity, subject) %>%           # Step 5.2: Group by activity and subject
+    group_by(subject, activity) %>%           # Step 5.2: Group by activity by subject
     summarise_all(mean)                       # Step 5.3: Calculate average of each variable for each activity and subject
 }
