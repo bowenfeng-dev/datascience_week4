@@ -10,3 +10,4 @@ Usage:
 > setwd("path/to/the/data")
 > source(run_analysis.R)
 > data <- run.analysis()
+> write.table(data, "data.csv", row.name=FALSE)
