@@ -7,7 +7,9 @@ After define some helper functions inside the run.analysis() function, the actua
 Each step is well documented in the source code.
 
 Usage:
+```
 > setwd("path/to/the/data")
 > source(run_analysis.R)
 > data <- run.analysis()
 > write.table(data, "data.csv", row.name=FALSE)
+```
