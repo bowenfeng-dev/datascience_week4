@@ -5,3 +5,8 @@ The script uses readr library to read the files into memory. The built in R read
 After define some helper functions inside the run.analysis() function, the actual data processing was done by using the chaining operator provided by dplyr library. This effectively eliminates all the unnecessary intermediate variables and make the process much cleaner.
 
 Each step is well documented in the source code.
+
+Usage:
+> setwd("path/to/the/data")
+> source(run_analysis.R)
+> data <- run.analysis()
